@@ -23,28 +23,36 @@ GGBunch()
 
 .. py:function:: bunch.show()
 
-**Examples**
+Examples
+---------
 
-.. code-block:: python
+.. jupyter-execute::
 
-    survived_by_adge = ggplot(titanic_df) \
-          + geom_histogram(aes('age', fill='survived'), position='dodge') \
-          + ggsize(800, 250)
+    import numpy as np
+    from lets_plot import *
 
-    bunch = GGBunch()
-    bunch.add_plot(survived_by_adge, 0, 0, 600, 200)
-    bunch.add_plot(path_map + theme(legend_position='none'), 0, 200)
-    bunch.show()
+    LetsPlot.setup_html()
 
-.. image:: /_images/ggbunch_1.png
+.. jupyter-execute::
 
-.. code-block:: python
+    cov=[[1, 0],
+         [0, 1]]
+    x, y = np.random.multivariate_normal(mean=[0,0], cov=cov, size=400).T
 
-    survived_by_port = ggplot(titanic_df) \
-          + geom_bar(aes('embarked', fill='survived'), position='dodge') \
-          + xlab('') + ggtitle('Port of embarkation') \
-          + theme(legend_position='none')
-    bunch.add_plot(survived_by_port, 600, 200, 380, 250)
-    bunch.show()
+    data = dict(
+        x = x,
+        y = y
+    )
 
-.. image:: /_images/ggbunch_2.png
+.. jupyter-execute::
+
+    p = ggplot(data) + ggsize(600,200)
+
+    scatter = p + geom_point(aes('x', 'y'), color='black', alpha=.4)
+    scatter
+
+.. jupyter-execute::
+
+    histogram = p + geom_histogram(aes('x', y = '..count..'), fill='dark_magenta')
+    histogram
+

@@ -6,6 +6,7 @@
 Welcome to lets-plot's documentation!
 =====================================
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -13,8 +14,8 @@ Welcome to lets-plot's documentation!
    ref/ggbunch
 
 
-Indices and tables
-==================
+
+**Indices and tables**
 
 * :ref:`genindex`
 * :ref:`search`

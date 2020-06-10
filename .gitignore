@@ -21,5 +21,6 @@ __pycache__/
 
 build_settings.yml
 
-# Sphinx-doc build directory
+# Sphinx-doc directories
 docs/sphinx-doc/build
+docs/sphinx-doc/jupyter_execute

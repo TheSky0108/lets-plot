@@ -6,6 +6,10 @@
 Lets-Plot
 =====================================
 
+**Lets-Plot** is an open-source plotting library for statistical data.
+
+It is implemented using the `Kotlin programming language <https://kotlinlang.org>`_.
+
 
 .. toctree::
    :maxdepth: 2

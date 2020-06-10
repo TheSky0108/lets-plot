@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to lets-plot's documentation!
+Lets-Plot
 =====================================
 
 
@@ -12,6 +12,8 @@ Welcome to lets-plot's documentation!
    :caption: Contents:
 
    ref/ggbunch
+   ref/ggsize
+   ref/geom_point
 
 
 

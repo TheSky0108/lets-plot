@@ -14,7 +14,7 @@ Lets-Plot
    ref/ggbunch
    ref/ggsize
    ref/geom_point
-
+   ref/geom_raster
 
 
 **Indices and tables**

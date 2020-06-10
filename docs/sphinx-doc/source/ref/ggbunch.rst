@@ -11,7 +11,7 @@ GGBunch()
 
 .. py:function:: bunch.add_plot(self, plot_spec: PlotSpec, x, y, width=None, height=None)
 
-    :argument plot_spec: (`ggplot()` object): Plot specifications set with `ggplot()` function
+    :argument plot_spec: (`ggplot()` object): Plot specifications set with `ggplot()` function.
     :argument x: (number) x-coordinate of plot origin in px.
     :argument y: (number) y-coordinate of plot origin in px.
     :argument width: (number) Width of plot in px.
@@ -24,7 +24,7 @@ GGBunch()
 .. py:function:: bunch.show()
 
 Examples
----------
+=========
 
 .. jupyter-execute::
 
@@ -32,8 +32,6 @@ Examples
     from lets_plot import *
 
     LetsPlot.setup_html()
-
-.. jupyter-execute::
 
     cov=[[1, 0],
          [0, 1]]
@@ -44,8 +42,6 @@ Examples
         y = y
     )
 
-.. jupyter-execute::
-
     p = ggplot(data) + ggsize(600,200)
 
     scatter = p + geom_point(aes('x', 'y'), color='black', alpha=.4)
@@ -53,6 +49,6 @@ Examples
 
 .. jupyter-execute::
 
-    histogram = p + geom_histogram(aes('x', y = '..count..'), fill='dark_magenta')
+    histogram = p + geom_histogram(aes('x', y = '..count..'), fill='rgb(131,161,189)')
     histogram
 

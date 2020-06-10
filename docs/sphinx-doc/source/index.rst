@@ -9,7 +9,17 @@ Lets-Plot
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Usage:
+   :name: usage
+
+   usage/install
+   usage/quickstart
+   usage/svg_export
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Reference:
+   :name: ref
 
    ref/ggbunch
    ref/ggsize

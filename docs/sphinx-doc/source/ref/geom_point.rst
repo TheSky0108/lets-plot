@@ -6,11 +6,16 @@ geom_point()
 .. py:function:: geom_point(mapping=None, data=None, stat=None, position=None, show_legend=None, sampling=None, animation=None, map_join=None, **other_args)
 
     :argument mapping: set of aesthetic mappings created by aes() function.
-    :argument data: pandas DataFrame or GeoDataFrame (supported shapes Point and MultiPoint), optional.
+        Aesthetic mappings describe the way that variables in the data are
+        mapped to plot "aesthetics".
+    :argument data: dictionary, pandas DataFrame or GeoDataFrame (supported shapes Point and MultiPoint), optional
+        The data to be displayed in this layer. If None, the default, the data
+        is inherited from the plot data as specified in the call to ggplot.
     :type data: dictionary
-    :argument stat: optional.
+    :argument stat: optional. The statistical transformation to use on the data for this layer.
     :type stat: string
-    :argument position: optional.
+    :argument position: optional. Position adjustment, either as a string ("identity", "stack", "dodge",...), or the result of a call to a
+        position adjustment function.
     :type position: string
     :argument animation: type of the animation, optional.
          Codes and names: 0 = "none" (default), 1 = "ripple".

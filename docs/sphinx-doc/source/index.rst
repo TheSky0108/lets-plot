@@ -30,6 +30,13 @@ It is implemented using the `Kotlin programming language <https://kotlinlang.org
    ref/geom_point
    ref/geom_raster
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Autodoc:
+   :name: autodoc
+
+   autodoc/modules
+
 
 **Indices and tables**
 
